@@ -111,18 +111,3 @@ This project is designed to construct and analyze Bayesian networks using both c
 	•	scikit-learn
 	•	networkx
 	•	matplotlib
-
-## Methodology
-
-### Data Loading and Preprocessing
-
-Data is loaded from CSV files and processed to ensure consistency and accuracy. This includes standardizing gene names, filtering based on specific criteria, and handling missing data. The preprocessing steps ensure that the data is ready for further analysis and network construction.
-
-### Network Construction and Analysis
-
-Bayesian networks are constructed using processed data, with nodes representing variables (e.g., genes) and edges representing relationships between these variables. The networks are annotated with relevant data, such as probability values, to provide insight into the relationships being modeled.
-
-### Visualization
-
-The constructed networks are visualized to aid in understanding the structure and relationships within the data. Visualization tools such as networkx and matplotlib are used to create clear and informative network graphs.
-
