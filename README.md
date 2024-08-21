@@ -47,21 +47,61 @@ This project is designed to construct and analyze Bayesian networks using both c
 	•	Output: Trained Bayesian network model.
 	•	Description: This script loads the cleaned and processed data, standardizes the gene names, and uses the processed data to train a Bayesian network model. The model is then ready for inference or further analysis.
 
+## Dependencies
+
 ### 1. Bayesian_initial_nodes.py
 	•	Input: i2g_df.csv, ppionly_uc_newresults.csv, edge_uc_3.txt
 	•	Output: Annotated Bayesian network graph.
+ 	Dependencies:
+	•	pandas
+	•	networkx
+	•	matplotlib
+	•	biopython (for Bio.Entrez)
+ 
 ### 2. bayesian_continous_data_overview.py
 	•	Input: combined_hc_data.csv, combined_uc_data.csv
 	•	Output: Cleaned and batch-split continuous data.
+	Dependencies:
+	•	pandas
+	•	numpy
+	•	scikit-learn
+	•	matplotlib
+	•	seaborn
+	•	scipy
+ 
 ### 3. bayesian_comparative_data_overview.py
 	•	Input: combined_hc_data.csv, combined_uc_data.csv, i2g_df_gene_ppion.csv, edge_uc_3.txt
 	•	Output: Filtered and merged data for specific gene analysis.
+ 	Dependencies:
+	•	pandas
+	•	numpy
+	•	scikit-learn
+	•	matplotlib
+	•	seaborn
+	•	scipy
 ### 4. bayesian_discrete_data_overview.py
 	•	Input: data.csv, TPM data files
 	•	Output: Grouped and aggregated TPM data for discrete samples.
+ 	Dependencies:
+	•	pandas
+	•	numpy
+	•	glob
+	•	os
+	•	scikit-learn
+	•	matplotlib
+	•	seaborn
+	•	scipy
 ### 5. train_lbn_081.py
 	•	Input: continous_hc.csv, discretized_hc.csv, discretized_uc.csv, i2g_df_gene_ppion.csv
 	•	Output: Trained Bayesian network model.
+	Dependencies:
+	•	pandas
+	•	numpy
+	•	torch
+	•	pgmpy
+	•	scikit-learn
+	•	networkx
+	•	matplotlib
 
 ## Methodology
 
